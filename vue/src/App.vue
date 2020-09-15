@@ -2,8 +2,12 @@
   <div id="app">
     <el-container>
 
+      <el-header>
+        <Header/>
+      </el-header>
+
       <el-main>
-        <SignupForm></SignupForm>
+        <router-view/>
       </el-main>
 
       <el-footer>
@@ -15,13 +19,13 @@
 </template>
 
 <script>
-  import SignupForm from "./components/SignupForm";
   import Footer from "./components/Footer";
+  import Header from "./components/Header";
   export default {
     name: 'App',
     components: {
+      Header,
       Footer,
-      SignupForm
     }
   }
 </script>
