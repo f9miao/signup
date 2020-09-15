@@ -1,4 +1,8 @@
-.DS_Store
+nginx
+docker-compose.yml
+Dockerfile
+
+DS_Store
 node_modules
 /dist
 
