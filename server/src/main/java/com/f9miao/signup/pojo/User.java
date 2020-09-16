@@ -40,8 +40,4 @@ public class User {
     @NotEmpty(message = "自我介绍一下咯^_^")
     private String introduction;
 
-    @Field("understand")
-    @NotEmpty(message = "好好想一想咯, 实在不会可以百度鸭╰(￣▽￣)╭")
-    private String understand;
-
 }

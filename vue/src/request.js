@@ -13,12 +13,10 @@ const axiosInstance = axios.create({
 // 响应拦截器
 axiosInstance.interceptors.response.use(function (response) {
     // 拦截服务器定义的错误
-    if(response.data.code !== 200){
+    if(response.data.code && response.data.code !== 200){
         Message.error({message: response.data.msg})
     }
-    else{
-        return response
-    }
+    return response
 },function (response) {
     switch (response.status) {
         case 500: {

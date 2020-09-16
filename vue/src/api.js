@@ -10,3 +10,13 @@ export async function signup(data) {
         data: data
     })
 }
+
+/**
+ * 查询所有报名者
+ */
+export async function list_all() {
+    return axiosInstance.request({
+        url: '/list_all',
+        method: 'GET',
+    })
+}

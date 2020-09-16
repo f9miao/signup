@@ -23,14 +23,6 @@
                       show-word-limit rows="5">
             </el-input><br>
 
-            <el-input class="signup-item"
-                      v-model="signup_data.understand"
-                      placeholder="简述你对所选部门的理解"
-                      type="textarea"
-                      maxlength="200"
-                      show-word-limit rows="5">
-            </el-input><br>
-
             <el-button class="signup-submmit" type="danger" @click="signup">立即报名</el-button><br>
 
         </el-card>
@@ -51,7 +43,6 @@
                     "email": "",
                     "department": "",
                     "introduction": "",
-                    "understand": ""
                 },
                 departmentOptions: [{
                     value: '大数据',
